@@ -1,0 +1,7 @@
+export function findNodeByKey(nodes, key) {
+  return (
+    nodes.find(
+      (n) => n.data.label.toLowerCase() === key.toLowerCase()
+    )?.id || null
+  );
+}
